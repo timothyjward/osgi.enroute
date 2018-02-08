@@ -21,8 +21,8 @@ index: target/index.xml
 -runrequires: \
 	osgi.identity;filter:='(osgi.identity=org.osgi.enroute.examples.microservice.rest-service)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.johnzon.core)',\
-	osgi.identity;filter:='(osgi.identity=org.h2)',\
-	bnd.identity;version='0.0.1.201801031655';id='org.osgi.enroute.examples.microservice.rest-app-jpa'
+	bnd.identity;version='0.0.1.201801031655';id='org.osgi.enroute.examples.microservice.rest-app-jpa',\
+	bnd.identity;id='org.postgresql.jdbc42'
 -runfw: org.apache.felix.framework
 -runee: JavaSE-1.8
 -runbundles: \
@@ -43,7 +43,6 @@ index: target/index.xml
 	org.osgi.util.promise;version='[1.1.0,1.1.1)',\
 	slf4j.api;version='[1.7.25,1.7.26)',\
 	tx-control-service-xa;version='[1.0.0,1.0.1)',\
-	org.h2;version='[1.4.196,1.4.197)',\
 	org.apache.felix.configurator;version='[0.0.1,0.0.2)',\
 	org.apache.servicemix.specs.json-api-1.1;version='[2.9.0,2.9.1)',\
 	org.apache.johnzon.core;version='[1.1.0,1.1.1)',\
@@ -61,4 +60,5 @@ index: target/index.xml
 	org.jboss.logging.jboss-logging;version='[3.3.0,3.3.1)',\
 	org.osgi.enroute.examples.microservice.dao-impl-jpa;version='[0.0.1,0.0.2)',\
 	org.osgi.enroute.examples.microservice.rest-app-jpa;version='[0.0.1,0.0.2)',\
-	tx-control-provider-jpa-xa;version='[1.0.0,1.0.1)'
+	tx-control-provider-jpa-xa;version='[1.0.0,1.0.1)',\
+	org.postgresql.jdbc42;version='[9.4.1212,9.4.1213)'
